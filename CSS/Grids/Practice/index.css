@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  height: 400px;
+  width: 600px;
+  gap: 5px;
+}
+
+.box1 {
+  background-color: green;
+  grid-row: 1/4;
+}
+
+.box2 {
+  background-color: green;
+  grid-column: 2/4;
+}
+.box3 {
+  background-color: red;
+}
+
+.box4 {
+  background-color: orange;
+}
+
+.box5 {
+  background: red;
+}
+
+.box6 {
+  background-color: green;
+  grid-row: 2/4;
+  grid-column-start: 4;
+}
+
+.box7 {
+  background-color: red;
+}
+
+.box8 {
+  background-color: orange;
+}
