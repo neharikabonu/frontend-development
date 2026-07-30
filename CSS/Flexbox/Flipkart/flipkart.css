@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid gray;
+  padding: 40px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.para {
+  font-weight: bold;
+}
+
+.para1 {
+  margin-top: 8px;
+  font-size: 14px;;
+  color:rgb(93, 92, 92);
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 12px;
+  color:rgb(92, 92, 92);
+  font-weight: 540;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid rgb(145, 140, 140);
+  width: 100%;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+div>a {
+  font-size: 12px;
+  color: rgb(9, 45, 162);
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login {
+  padding: 8px;
+  width: 50%;
+  border: none;
+  color: white;
+  background-color: orangered;
+  border-radius: 4px;
+}
+
+.otp, span {
+  align-self: center;
+}
+
+span {
+  color: gray;
+  font-size: 12px;
+}
+
+.otp {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.create {
+  display: flex;
+
+}
+
+.para2 {
+  font-size: 12px;
+  color: gray;
+  font-style: bold;
+}
