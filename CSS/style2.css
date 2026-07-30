@@ -1,0 +1,16 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  color: rgb(0, 140, 255);
+}
+
+.buttons {
+  background-color: aqua;
+}
+
+.search-button {
+  background-color: black;
+  color: white;
+}

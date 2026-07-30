@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.parent {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  position: relative;
+}
+
+.child {
+  height: 90px;
+  width: 90px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}

@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.parent {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+
+.child {
+  height: 200px;
+  width: 200px;
+}
+
+.child1 {
+  background-color: violet;
+}
+
+.child2 {
+  background-color: indigo;
+}
+
+.child3 {
+  background-color: pink;
+}
+
+.child4 {
+  background-color: wheat;
+}

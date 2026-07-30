@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.parent {
+  background-color: rgb(17, 67, 184);
+  height: 200px;
+  width: 300px;
+  position: relative;
+}
+
+.child {
+  background-color: rgb(222, 208, 11);
+}
+
+.child1 {
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  left: 70px;
+}
+
+.child2 {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
