@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10px;
+  position: relative;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(197, 104, 119);
+  animation-name: box1;
+  position: absolute;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes box1 {
+  from {
+    top: 10px;
+    left: 10px;
+  }
+
+  to {
+    top: 10px;
+    left: 90%;
+    background-color: rgb(99, 5, 5);
+  }
+}
