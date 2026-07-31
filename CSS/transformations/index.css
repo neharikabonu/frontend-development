@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation-name: box;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /* border-radius: 50%; */
+  /* transform: all;
+  transition-duration: 2s; */
+  
+}
+
+@keyframes box {
+  from {
+    transform: rotate(0deg) translateX(100px);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(100px);
+  }
+}
+
+/* .container:hover {
+  height: 150px;
+  width: 150px;
+  background-color: pink;
+  border: 1px solid red;
+  transform: translate(100px, 100px);
+  transform: rotate(30deg);
+} */
