@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+#logo {
+  color: brown;
+  margin-bottom: 10px;
+}
+
+#pet {
+  color: olive;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.pet-cards {
+  width: 400px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px 2px black;
+  transition-duration: 0.2s;
+}
+
+img {
+  width: 100%;
+}
+
+.name {
+  margin-bottom: 20px;
+}
+
+.pet-cards:hover {
+  box-shadow: 0px 0px 16px 4px black;
+  transform: translateY(-5px);
+}
