@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+
+}
+
+.sidebar {
+  background-color: pink;
+  width: 220px;
+  padding: 30px 20px;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: palevioletred;
+  box-shadow: 0px 0px 2px 2px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 220px;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+}
+

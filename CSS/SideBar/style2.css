@@ -1,0 +1,81 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: pink;
+  padding: 70px 20px 30px;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 12px;
+}
+
+nav a:hover {
+  background-color: palevioletred;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 40px;
+
+  transition: margin-left 0.3s ease;
+}
+
+.content h1 {
+  margin-bottom: 30px;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  font-size: 30px;
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+#toggle:checked ~ .sidebar {
+  width: 70px;
+  padding: 70px 10px 30px;
+  overflow: hidden;
+}
+
+#toggle:checked ~ .content {
+  margin-left: 70px;
+}
+
+#toggle:checked ~ .sidebar .text {
+  display: none;
+}
+
+#toggle:checked ~ .sidebar nav a {
+  text-align: center;
+}
