@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="username" placeholder="Enter username">
+<button id="addBtn">Add User</button>
+
+<ul id="userList"></ul>
+</body>
+<script>
+  const username = document.getElementById("username");
+
+  const button = document.getElementById("addBtn");
+
+  const ul = document.getElementById("userList");
+
+  button.addEventListener('click', (event) => {
+
+    let text = username.value.trim();
+
+    if(text === "") return;
+
+    const li = document.createElement("li");
+    
+    // li.textContent = text;
+
+    const name = document.createElement("span");
+    name.textContent = text;
+
+    const deleteBtn = document.createElement("button");
+
+    deleteBtn.textContent = "Delete";
+
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "Edit";
+
+    deleteBtn.addEventListener("click", () => {
+      li.remove();
+    })
+
+    editBtn.addEventListener("click", () => {
+      const newName = prompt("enter new name: ")
+
+      if (newName === null || newName.trim() === "") {
+        return;
+    }
+      name.textContent = newName;
+    })
+
+    li.append(name);
+    li.append(editBtn);
+    li.append(deleteBtn);
+
+
+    ul.append(li);
+
+    username.value = "";
+  })
+</script>
+</html>
