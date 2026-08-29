@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding: 20px 20px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.card .header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid gray;
+  color: rgb(79, 78, 78);
+}
+
+.card .main h3 {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.card .main h3 span {
+  font-size: 10px;
+  color: darkgrey;
+}
+
+.main h1 {
+  font-size: 20px;
+
+}
+
+.main .tags {
+  display: flex;
+  gap: 10px;
+}
+
+.main .tags p {
+  background-color: lightgray;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+}
+
+.footer .pay {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer .location {
+  font-size: 9px;
+  color: gray;
+}
+
+.footer button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 10px;
+}
