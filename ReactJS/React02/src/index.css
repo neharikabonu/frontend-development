@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background-color: pink;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav {
+  height: 30px;
+  background-color: black;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+}
