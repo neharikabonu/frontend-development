@@ -1,0 +1,16 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(67, 42, 46);
+  width: 100vw;
+  padding: 10px;
+}
+
+.footer p {
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 20px;
+}
