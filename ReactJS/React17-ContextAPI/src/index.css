@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  background-color: lightseagreen;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav2 {
+  display: flex;
+  gap: 30px;
+}
+
