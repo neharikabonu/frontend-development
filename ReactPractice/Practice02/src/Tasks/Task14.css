@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid rgb(224, 218, 218);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  height: 100px;
+  width: 100%;
+  object-fit: contain;
+}
+
+div p:first-of-type {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+div p:nth-child(2) {
+  font-size: 12px;
+}
+
+.bottom {
+  align-self: center;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
